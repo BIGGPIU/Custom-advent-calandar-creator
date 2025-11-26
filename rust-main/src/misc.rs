@@ -24,7 +24,7 @@ impl Fun {
             "Harshcore Dream by DJ Myosuke",
             "Joe Fight by DJ Myosuke",
             "You Killed My XXXXXX by DJ Myosuke",
-            "ENGINECORE by DJK Myosuke",
+            "ENGINECORE by DJ Myosuke",
             "Speedcore Angel by SCENAR10",
             "yes, I know by TohlPeaks",
             "Aegleseeker by Silentroom vs Frums"
