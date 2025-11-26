@@ -70,7 +70,7 @@ function App() {
       </div>
       <div className='h-2 float-left w-full '></div>
       {my_element_2}
-      <div className='w-4/7 float-left h-fit pl-2'>all the events for the upcoming days are <a href="https://en.wikipedia.org/wiki/Base64">Base64 Encoded.</a> If you desperately want to see what is happening on that date you can decode the event name with <a href="https://www.base64decode.org/">tools like this.</a></div>
+      <div className='w-full float-left h-fit pl-2'>all the events for the upcoming days are <a href="https://en.wikipedia.org/wiki/Base64">Base64 Encoded.</a> If you desperately want to see what is happening on that date you can decode the event name with <a href="https://www.base64decode.org/">tools like this.</a></div>
     </div>
     )
   }
