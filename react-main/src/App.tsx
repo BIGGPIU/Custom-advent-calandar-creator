@@ -219,9 +219,9 @@ function GetAllEventsAndMakeCalandar(props:GetAllEventsAndMakeCalandarProps) {
           break;
         }
 
-        dates[data["scheduled_events"][i]["Date"]] = {
+        dates[data["scheduled_events"][i]["Date"] - 1] = {
           event_name: data["scheduled_events"][i]["EventName"],
-          event_date: data["scheduled_events"][i]["Date"],
+          event_date: data["scheduled_events"][i]["Date"] - 1,
           suggested_by: data["scheduled_events"][i]["SuggestedBy"]
         }
 
@@ -274,9 +274,19 @@ function GetAllEventsAndMakeCalandar(props:GetAllEventsAndMakeCalandarProps) {
         
       }
 
+
+      let nodes:React.ReactNode[] = [];
+      let ii = 0;
+
+      dates.forEach((x) => {
+        nodes.push(<CalandarDay event_date={(ii+1).toString()} event_name={x.event_name} suggested_by={x.suggested_by} />)
+        ii++;
+      })
+
       return (
         <>
-        {dates.map((x) => <CalandarDay event_name={x.event_name} event_date={x.event_date.toString()} suggested_by={x.suggested_by} ></CalandarDay>)}
+        {/* {dates.map((x) => <CalandarDay event_name={x.event_name} event_date={x.event_date.toString()} suggested_by={x.suggested_by} ></CalandarDay>)} */}
+        {nodes}
         </>
       )
     }
